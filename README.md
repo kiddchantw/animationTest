@@ -4,9 +4,9 @@
   
 tabOne use  View Transitions   // tabTwo use  Keyframe Animations,View animation - Springs
 
-![tabOne](https://github.com/kiddchantw/animationTest/blob/master/tabOne.gif)  
+![image](https://github.com/kiddchantw/animationTest/blob/master/tabOne.gif)  
 
-![tabTwo](https://github.com/kiddchantw/animationTest/blob/master/tabTwo.gif)
+![image](https://github.com/kiddchantw/animationTest/blob/master/tabTwo.gif)
 
 
 
