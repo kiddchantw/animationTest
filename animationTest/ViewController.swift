@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet var imgOne: UIImageView!
     @IBAction func btnThree(_ sender: UIButton) {
 
-        //可以動但怪
         UIView.animateKeyframes(withDuration: 2.0, delay: 0, options:[], animations: {
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.5, animations: {
                 self.imgOne.center.x += 15
@@ -63,37 +62,17 @@ class ViewController: UIViewController {
     
     
     
-    //btnOne
-    //縮放動畫  回覆的動畫怪怪
-    //背景延遲變色
+   
     @IBOutlet var btnOne: UIButton!
     
     @IBAction func btnOne(_ sender: UIButton) {
-        let bounds = self.btnOne.bounds
-        
-        //UIView.animate(withDuration: TimeInterval, delay: <#T##TimeInterval#>, options: <#T##UIViewAnimationOptions#>, animations: <#T##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
-        
-        //UIView.animate(withDuration:1.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: nil, animations: {
-        //self.btnOne.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 100, height: bounds.size.height)
-//        self.btnOne.enabled = false
-        //}, completion: nil)
-        
-        
+       
         UIView.animate(withDuration: 0.8, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options:.autoreverse, animations: {() -> Void in
             
             self.btnOne.center.x += 100
-/*
-            self.btnOne.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width+60 , height: bounds.size.height)
-            self.btnOne.isEnabled = false
-            */
-        }, completion:nil)
-  /*
-        //{ result -> Void in
-            //回來的動畫怪怪的
-            //self.btnOne.bounds = CGRect(x: bounds.origin.x , y: bounds.origin.y, width: bounds.size.width , height: bounds.size.height)
 
-       // })
-    */
+        }, completion:nil)
+
         
         
         self.view.backgroundColor = UIColor.yellow

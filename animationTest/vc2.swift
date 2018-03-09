@@ -29,9 +29,6 @@ class vc2: UIViewController {
         UIView.transition(with: viewOne, duration: 1.0, options: [.transitionFlipFromRight, .showHideTransitionViews], animations: {
             self.viewOne.isHidden = false
             
-//            self.lblOne.text = self.isFlipped ? "World": "Hello"
-//            self.lblOne.backgroundColor = self.isFlipped ? UIColor.blue:UIColor.red
-            
         })
         
     }
